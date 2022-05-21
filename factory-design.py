@@ -1,5 +1,8 @@
 from abc import ABCMeta, abstractmethod, abstractstaticmethod
 
+
+## Factory pattern can be used if you need to have different
+## types of an entity.
 class IPerson(metaclass=ABCMeta):
 
     @abstractstaticmethod

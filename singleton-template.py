@@ -21,8 +21,11 @@ class SingletonPattern:
 
 
 
+## Works
 data = SingletonPattern("Mike", 50, 5.0, ['this','is','a','list'])
 print(data.print_args())
 
+
+## Fails
 data1 = SingletonPattern("John", 25, 19.0, {"Type":"Dictionary"})
 print(data1.print_args())

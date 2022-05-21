@@ -1,5 +1,8 @@
 from abc import ABCMeta, abstractmethod, abstractstaticmethod
 
+## Composit design pattern can me used if you have several entities
+## that need to be combined into one entity.
+
 class IDepartment(metaclass=ABCMeta):
 
     @abstractmethod

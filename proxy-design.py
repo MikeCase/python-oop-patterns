@@ -1,5 +1,10 @@
 from abc import ABCMeta, abstractstaticmethod
 
+
+## The proxy design pattern can be used if you need to add extra
+## functionality before/after a class method (maybe I'm saying that wrong?)
+## Maybe I just don't know what the hell I'm talking about :P
+
 class IPerson(metaclass=ABCMeta):
 
     @abstractstaticmethod

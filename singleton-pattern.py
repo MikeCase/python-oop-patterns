@@ -1,8 +1,9 @@
 from abc import ABCMeta, abstractstaticmethod
 
+## This design pattern (the singleton pattern) can only be instantiated
+## once.
 
-##Abstract class IPerson.
-
+## Interface
 class IPerson(metaclass=ABCMeta):
     def print_data():
         """ Implemented in singleton class """
@@ -31,9 +32,11 @@ class PersonSingleton(IPerson):
     def print_data(self):
         print(f"My name is {self.name} and I am currently {self.age} years old!")
 
-
+## Works
 p1 = PersonSingleton("Mike", 40)
 print(p1.print_data())
 
+
+## Fails
 p2 = PersonSingleton("Jim", 55)
 print(p2.print_data())
